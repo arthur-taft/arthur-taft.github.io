@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png"> 
+        <script src="/js/index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #mail,
+            #phone {
+                width: 1em;
+                height: auto;
+            }
+            
+            #contact-info {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #contact-info a {
+                font-family: 'Noto Sans', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+                <div id="banner">
+                    <button class="banner-button" onclick="load_mda_homepage()"><img class="banner-image" src="/images/mda.png"></button>
+                </div>
+                <header>
+                    <h1>Contact Us</h1>
+                </header>
+                <nav>
+                <div id="nav-container">
+                    <button id="burger" aria-label="Open Menu">&#9776;</button>
+                    <div id="nav-links">
+                    <button class="nav-button" onclick="load_internal_page('index.html')">Home</button>
+                    <button class="nav-button" onclick="load_internal_page('about.html')">About Us</button>
+                    <button class="nav-button" onclick="load_internal_page('events.html')">Calendar Events</button>
+                    <button class="nav-button" onclick="load_internal_page('faq.html')">FAQ</button>
+                    <button class="nav-button" onclick="load_internal_page('get_involved.html')">Get Involved</button>
+                    </div>
+                </div>
+                </nav>
+                <main>
+                    <h2>Contact Us</h2>
+                    <p>Have questions or need assistance? We're here to help! Reach out to MDA using the contact details below.</p>
+                    <h3>Muscular Dystrophy Association, Inc.</h3>
+                    <p>1016 W Jackson Blvd #1073</p>
+                    <p>Chicago, IL 60607</p>
+                    <div id="contact-info">
+                        <div id="phone-info">
+                            <img id="phone" src="/images/phone.png">
+                            <a href="tel:+(800)5721717">(800) 572 1717</a>
+                        </div>
+                        <div id="email-info">
+                            <img id="mail" src="/images/email.png">
+                            <a href="mailto:ResourceCenter@mdausa.org">Email us</a>
+                        </div>
+                    </div>
+                    <form action="#" method="post">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" required>
+
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" required>
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <label for="contact-method">Preferred Contact Method:</label>
+                        <select id="contact-method" name="contact-method">
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Message Details</legend>
+
+                        <label for="reason">Reason for Contact:</label>
+                        <select id="reason" name="reason">
+                            <option value="support">Support</option>
+                            <option value="volunteer">Volunteering</option>
+                            <option value="donation">Donation</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <label class="checkbox-label" for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Subscribe to newsletter
+                        </label>
+                    </fieldset>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+            </main>
+            <footer>
+                <p>Check us out on <a href="https://www.facebook.com/MDAOrg/" class="social-link">Facebook</a> and <a href="https://x.com/mdaorg?lang=en" class="social-link">Twitter.</a></p>
+                <p>&copy; 2025 Arthur Taft, Derek Kirby, Justin Barton</p>
+                <p>&copy; 2025 Muscular Dystrophy Association Inc</p>
+            </footer>
+        </div>
+    </body>
+</html>

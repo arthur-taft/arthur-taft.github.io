@@ -1,0 +1,53 @@
+/* Calendar Style Rules */
+
+#calendar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style rules for table */
+.calendar-table {
+    padding: 10px;
+}
+
+/* Set style rules for last row */
+.calendar-row:last-child td {
+    border-bottom: none;
+}
+
+/* Set style rules for td */
+.calendar-day {
+    border-right: var(--calendar-table-border);
+    border-bottom: var(--calendar-table-border);
+    border-collapse: collapse;
+    padding: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+}
+
+/* Set style rules for the last td in a row */
+
+.calendar-day:last-child {
+    border-right: none;
+}
+
+/* Set style rules for date */
+.date {
+    padding: 0;
+    padding-right: 2px;
+    margin: 0;
+    font-size: 1em;
+    text-align: right;
+    justify-self: top;
+}
+
+/* Set style rules for events */
+.evt{
+    padding: 0;
+    margin: 0;
+    font-size: 0.5em;
+    text-align: left;
+}

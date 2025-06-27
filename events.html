@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calendar Events</title>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/calendar.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div id="content">
+            <div id="banner">
+                <button class="banner-button" onclick="load_mda_homepage()"><img class="banner-image" src="/images/mda.png"></button>
+            </div>
+            <header>
+                <h1>Calendar Events</h1>
+            </header>
+            <nav>
+            <div id="nav-container">
+                <button id="burger" aria-label="Open Menu">&#9776;</button>
+                <div id="nav-links">
+                <button class="nav-button" onclick="load_internal_page('index.html')">Home</button>
+                <button class="nav-button" onclick="load_internal_page('about.html')">About Us</button>
+                <button class="nav-button" onclick="load_internal_page('get_involved.html')">Get Involved</button>
+                <button class="nav-button" onclick="load_internal_page('faq.html')">FAQ</button>
+                <button class="nav-button" onclick="load_internal_page('contact.html')">Contact Us</button>
+                </div>
+            </div>
+            </nav>
+            <main>
+                <div id="calendar-content">
+                    <img src="/images/mda-calendar.jpeg" alt="People looking and pointing at various calendars" class="faq-image">
+                </div>
+            </main>
+            <footer>
+                <p>Check us out on <a href="https://www.facebook.com/MDAOrg/" class="social-link">Facebook</a> and <a href="https://x.com/mdaorg?lang=en" class="social-link">Twitter.</a></p>
+                <p>&copy; 2025 Arthur Taft, Derek Kirby, Justin Barton</p>
+                <p>&copy; 2025 Muscular Dystrophy Association Inc</p>
+            </footer>
+        </div>
+        <script src="/js/index.js"></script>
+        <script src="/js/calendar.js"></script>
+    </body>
+</html>
